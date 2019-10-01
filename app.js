@@ -40,11 +40,21 @@ if (myName === 'yes') {
 }
 
 var myColor = prompt('My favorite color is orange?');
-// console.log('myName: ', myName);
+// console.log('myColor: ', myColor);
 
 myColor = myColor.toLowerCase();
 if (myColor === 'no') {
     alert('Yeeeah, you are right!');
 } else {
     alert('Nope, I don\'t like orange color! My favorite is white.');
+}
+
+var nativeLanguage = prompt('My native language is Russian?');
+// console.log('nativeLanguage: ', nativeLanguage);
+
+nativeLanguage = nativeLanguage.toLowerCase();
+if (nativeLanguage === 'no') {
+    alert('Yep, my native language is Ukranian');
+} else {
+    alert('Nope, I speak Russian but my native is Ukranian.');
 }
