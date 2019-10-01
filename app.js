@@ -24,7 +24,7 @@
 // }
 
 
-var userName = prompt('What\'s your name ?');
+var userName = prompt('Hey! What\'s your name ?');
 // console.log('userName: ', userName);
 
 alert('Welcome ' + userName + '!');
@@ -37,4 +37,14 @@ if (myName === 'yes') {
     alert('Yeeeah');
 } else {
     alert('Ooooops, not correct!');
+}
+
+var myColor = prompt('My favorite color is orange?');
+// console.log('myName: ', myName);
+
+myColor = myColor.toLowerCase();
+if (myColor === 'no') {
+    alert('Yeeeah, you are right!');
+} else {
+    alert('Nope, I don\'t like orange color! My favorite is white.');
 }
