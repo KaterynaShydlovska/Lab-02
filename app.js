@@ -14,8 +14,8 @@
 // }
 
 // var likesStrangeThings = promt('Hello, do you like stranger things?');
-// // likesStrangeThings = likesStrangeThings.toLower.Case();
-// // likesStrangeThings = likesStrangeThings.toUpper.Case();
+// // likesStrangeThings = likesStrangeThings.toLowerCase();
+// // likesStrangeThings = likesStrangeThings.toUpperCase();
 
 // if (likesStrangeThings === 'yes' || 'YES' || 'Yes'); {
 //     alert('Yes, me too!');
@@ -28,3 +28,13 @@ var userName = prompt('What\'s your name ?');
 // console.log('userName: ', userName);
 
 alert('Welcome ' + userName + '!');
+
+var myName = prompt('Let\'s check you! My name is Kate?');
+// console.log('myName: ', myName);
+
+myName = myName.toLowerCase();
+if (myName === 'yes') {
+    alert('Yeeeah');
+} else {
+    alert('Ooooops, not correct!');
+}
