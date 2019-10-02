@@ -6,7 +6,7 @@ var userName = prompt('Hey! What\'s your name ?');
 alert('Welcome ' + userName + '!');
 
 var myName = prompt('Let\'s check you! My name is Kate?');
-// console.log('Yes, my name is Kate');
+// console.log('myName: ', myName);
 
 myName = myName.toLowerCase();
 if (myName === 'yes' || myName === 'y') {
@@ -16,7 +16,7 @@ if (myName === 'yes' || myName === 'y') {
 }
 
 var myColor = prompt('My favorite color is orange?');
-// console.log('No, I din't like orange color.);
+// console.log('myColor: ', myColor);
 
 myColor = myColor.toLowerCase();
 if (myColor === 'no' || myColor === 'n') {
@@ -26,7 +26,7 @@ if (myColor === 'no' || myColor === 'n') {
 }
 
 var nativeLanguage = prompt('My native language is Russian?');
-// console.log('No, Rusian is not my native language.');
+// console.log('nativeLanguage: ' , nativeLanguage);
 
 nativeLanguage = nativeLanguage.toLowerCase();
 if (nativeLanguage === 'no' || nativeLanguage === 'n') {
@@ -36,7 +36,7 @@ if (nativeLanguage === 'no' || nativeLanguage === 'n') {
 }
 
 var pets = prompt('Do I have any pets?');
-// console.log('No, I don't have pets.');
+// console.log('pets: ' , pets);
 
 pets = pets.toLowerCase();
 if (pets === 'no' || pets === 'n') {
@@ -46,7 +46,7 @@ if (pets === 'no' || pets === 'n') {
 }
 
 var likeToBeHere = prompt('Am I happy to be here?');
-// console.log('Yes, I happy to be here'.);
+// console.log('likeToBeHere: ', likeToBeHere);
 
 likeToBeHere = likeToBeHere.toLowerCase();
 if (likeToBeHere === 'yes' || likeToBeHere === 'y') {
