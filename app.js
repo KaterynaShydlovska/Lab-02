@@ -85,19 +85,66 @@ var language = prompt('How many languages I speak?');
 language = parseInt(language);
 if (language === 3) {
   alert('You are right!');
-}
-rightAnswerCount++;
+  rightAnswerCount++;
 
-if (language < 3) {
+} else if (language < 3) {
   alert('Too low');
 } else {
   alert('Wow, to hight!');
 }
 //console.log('language:' , language);
 
+var statesVisited = prompt('I loveeee traveling! What do you think, how many states I visited in US?');
+statesVisited = parseInt(statesVisited);
+if (statesVisited === 10) {
+  alert('You are right!');
+  rightAnswerCount++;
+}
+
+else if (statesVisited < 10) {
+  alert('Too low');
+} else {
+  alert('Wow, to hight!');
+}
+//console.log('statesVisited:' , statesVisited);
 
 
+var family = prompt('How many brothers and sisters I have?');
+family = parseInt(family);
+if (family === 1) {
+  alert('You are right!');
+  rightAnswerCount++;
+} else if (family < 1) {
+  alert('Too low');
+} else {
+  alert('Wow, to hight!');
+}
+//console.log('family:' , family);
+
+var jobs = prompt('How many jobs I had before came to school?');
+jobs = parseInt(jobs);
+if (jobs === 13) {
+  alert('You are right!');
+  rightAnswerCount++;
+} else if (jobs < 13) {
+  alert('Too low, I changed 13 jobs bafore came here.');
+} else {
+  alert('Wow, to hight! Impossible, I\'m to young');
+}
+//console.log('jobs:' , jobs);
+
+var tattoo = prompt('How many tatto I have ?');
+tattoo = parseInt(tattoo);
+if (tattoo === 2) {
+  alert('You are right!');
+  rightAnswerCount++;
+} else if (jobs < 2) {
+  alert('Too low, I changed 13 jobs bafore came here.');
+} else {
+  alert('Wow, to hight! Impossible, I\'m to young');
+}
+//console.log('tattoo:' , tattoo);
 
 alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
 
-alert('Thank you ' + userName + ' for taking small quiz about me, hope ypu had fun and you\'ll know me better!');
+alert('Thank you ' + userName + ' for taking small quiz about me, hope you had fun and you\'ll know me better!');
