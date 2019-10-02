@@ -8,9 +8,11 @@ alert('Welcome ' + userName + '!');
 var myName = prompt('Let\'s check you! My name is Kate?');
 // console.log('myName: ', myName);
 
+var rightAnswerCount = 0;
 myName = myName.toLowerCase();
 if (myName === 'yes' || myName === 'y') {
   alert('Yeeeah');
+  rightAnswerCount++;
 } else {
   alert('Ooooops, not correct!');
 }
@@ -21,6 +23,7 @@ var myColor = prompt('My favorite color is orange?');
 myColor = myColor.toLowerCase();
 if (myColor === 'no' || myColor === 'n') {
   alert('Yeeeah, you are right!');
+  rightAnswerCount++;
 } else {
   alert('Nope, I don\'t like orange color! My favorite is white.');
 }
@@ -31,6 +34,7 @@ var nativeLanguage = prompt('My native language is Russian?');
 nativeLanguage = nativeLanguage.toLowerCase();
 if (nativeLanguage === 'no' || nativeLanguage === 'n') {
   alert('Yep, my native language is Ukranian');
+  rightAnswerCount++;
 } else {
   alert('Nope, I speak Russian but my native is Ukranian.');
 }
@@ -41,6 +45,7 @@ var pets = prompt('Do I have any pets?');
 pets = pets.toLowerCase();
 if (pets === 'no' || pets === 'n') {
   alert('Correct, unfortunately I don\'t have any.');
+  rightAnswerCount++;
 } else {
   alert('I would love to have some, but no.');
 }
@@ -51,8 +56,31 @@ var likeToBeHere = prompt('Am I happy to be here?');
 likeToBeHere = likeToBeHere.toLowerCase();
 if (likeToBeHere === 'yes' || likeToBeHere === 'y') {
   alert('Yaaaay, I\'m really happy to be here with all of you!!!!');
+  rightAnswerCount++;
 } else {
   alert('No, No, No. It\'s impssible!');
 }
+
+alert('Hey, now we\'ll play a new game. Rules are super easy, you should to try guess a number.');
+
+
+
+var myAge = prompt('How old am I?');
+myAge = parseInt(myAge);
+if (myAge === 25) {
+  alert('You are right!');
+}
+rightAnswerCount++;
+
+if (myAge < 25) {
+  alert('Too low');
+} else {
+  alert('Wow, to hight!');
+}
+//console.log(typeof myAge);
+
+
+
+alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
 
 alert('Thank you ' + userName + ' for taking small quiz about me, hope ypu had fun and you\'ll know me better!');
