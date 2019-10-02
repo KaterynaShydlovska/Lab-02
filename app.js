@@ -64,86 +64,85 @@ if (likeToBeHere === 'yes' || likeToBeHere === 'y') {
 alert('Hey, now we\'ll play a new game. Rules are super easy, you should to try guess a number.');
 
 
+for (var i = 0; i < 4; i++ ) {
+  var myAge = prompt('How old am I?');
+  myAge = parseInt(myAge);
+  if (myAge === 25) {
+    alert('You are right!');
+    rightAnswerCount++;
 
-var myAge = prompt('How old am I?');
-myAge = parseInt(myAge);
-if (myAge === 25) {
-  alert('You are right!');
-}
-rightAnswerCount++;
-
-if (myAge < 25) {
-  alert('Too low');
-}
-if (myAge > 25) {
-  alert('Wow, to hight!');
+  } else if (myAge < 25) {
+    alert('Too low');
+  } else {
+    alert('Wow, to hight!');
+  }
 }
 //console.log(typeof myAge);
 
 
-var language = prompt('How many languages I speak?');
-language = parseInt(language);
-if (language === 3) {
-  alert('You are right!');
-  rightAnswerCount++;
+// var language = prompt('How many languages I speak?');
+// language = parseInt(language);
+// if (language === 3) {
+//   alert('You are right! I speak Ukranian, Russian and English');
+//   rightAnswerCount++;
 
-} else if (language < 3) {
-  alert('Too low');
-} else {
-  alert('Wow, to hight!');
-}
-//console.log('language:' , language);
+// } else if (language < 3) {
+//   alert('Too low, I speak 3.');
+// } else {
+//   alert('Wow, to hight, I would like to!');
+// }
+// //console.log('language:' , language);
 
-var statesVisited = prompt('I loveeee traveling! What do you think, how many states I visited in US?');
-statesVisited = parseInt(statesVisited);
-if (statesVisited === 10) {
-  alert('You are right!');
-  rightAnswerCount++;
-}
+// var statesVisited = prompt('I loveeee traveling! What do you think, how many states I visited in US?');
+// statesVisited = parseInt(statesVisited);
+// if (statesVisited === 10) {
+//   alert('You are right!');
+//   rightAnswerCount++;
+// }
 
-else if (statesVisited < 10) {
-  alert('Too low');
-} else {
-  alert('Wow, to hight!');
-}
-//console.log('statesVisited:' , statesVisited);
+// else if (statesVisited < 10) {
+//   alert('Too low');
+// } else {
+//   alert('Wow, to hight!');
+// }
+// //console.log('statesVisited:' , statesVisited);
 
 
-var family = prompt('How many brothers and sisters I have?');
-family = parseInt(family);
-if (family === 1) {
-  alert('You are right!');
-  rightAnswerCount++;
-} else if (family < 1) {
-  alert('Too low');
-} else {
-  alert('Wow, to hight!');
-}
-//console.log('family:' , family);
+// var family = prompt('How many brothers and sisters I have?');
+// family = parseInt(family);
+// if (family === 1) {
+//   alert('You are right!');
+//   rightAnswerCount++;
+// } else if (family < 1) {
+//   alert('Too low');
+// } else {
+//   alert('Wow, to hight!');
+// }
+// //console.log('family:' , family);
 
-var jobs = prompt('How many jobs I had before came to school?');
-jobs = parseInt(jobs);
-if (jobs === 13) {
-  alert('You are right!');
-  rightAnswerCount++;
-} else if (jobs < 13) {
-  alert('Too low, I changed 13 jobs bafore came here.');
-} else {
-  alert('Wow, to hight! Impossible, I\'m to young');
-}
-//console.log('jobs:' , jobs);
+// var jobs = prompt('How many jobs I had before came to school?');
+// jobs = parseInt(jobs);
+// if (jobs === 13) {
+//   alert('You are right!');
+//   rightAnswerCount++;
+// } else if (jobs < 13) {
+//   alert('Too low, I changed 13 jobs bafore came here.');
+// } else {
+//   alert('Wow, to hight! Impossible, I\'m to young');
+// }
+// //console.log('jobs:' , jobs);
 
-var tattoo = prompt('How many tatto I have ?');
-tattoo = parseInt(tattoo);
-if (tattoo === 2) {
-  alert('You are right!');
-  rightAnswerCount++;
-} else if (jobs < 2) {
-  alert('Too low, I changed 13 jobs bafore came here.');
-} else {
-  alert('Wow, to hight! Impossible, I\'m to young');
-}
-//console.log('tattoo:' , tattoo);
+// var tattoo = prompt('How many tatto I have ?');
+// tattoo = parseInt(tattoo);
+// if (tattoo === 2) {
+//   alert('You are right!');
+//   rightAnswerCount++;
+// } else if (jobs < 2) {
+//   alert('Too low, I changed 13 jobs bafore came here.');
+// } else {
+//   alert('Wow, to hight! Impossible, I\'m to young');
+// }
+//console.log('tattoo:', tattoo);
 
 alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
 
