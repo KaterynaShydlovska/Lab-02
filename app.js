@@ -74,10 +74,27 @@ rightAnswerCount++;
 
 if (myAge < 25) {
   alert('Too low');
-} else {
+}
+if (myAge > 25) {
   alert('Wow, to hight!');
 }
 //console.log(typeof myAge);
+
+
+var language = prompt('How many languages I speak?');
+language = parseInt(language);
+if (language === 3) {
+  alert('You are right!');
+}
+rightAnswerCount++;
+
+if (language < 3) {
+  alert('Too low');
+} else {
+  alert('Wow, to hight!');
+}
+//console.log('language:' , language);
+
 
 
 
