@@ -77,24 +77,29 @@ for (var i = 0; i < 4; i++ ) {
   }
 }
 
-
-
-
-var statesVisited = ['alaska', 'nevada', 'hawaii', 'florida', 'illinois', 'idaho'];
+var statesVisited = ['alaska', 'nevada', 'hawaii', 'florida'];
 // console.log('statesVisited:', statesVisited);
 
-for (var j = 0; j < 6; j++){
+for (var j = 0; j < 6; j++) {
   var usersGuess = prompt('I loveeee traveling! What do you think, which states I already visited in US, Alaska, Nevada, Hawaii, Florida, Illinois, Texas?');
-  var usersGuess = usersGuess.toLowerCase();
-  if (statesVisited.includes(usersGuess)) {
-    rightAnswerCount++;
-    alert('Correct, I visited this state!');
-    break;
-  } else {
-    alert('Not yet, but I\'ll go once for sure');
+  usersGuess = usersGuess.toLowerCase();
+  var isCorrect = false;
+  for (var a = 0; a < statesVisited.length; a++) {
+    if (usersGuess === statesVisited[a]) {
+    //   console.log(usersGuess === statesVisited[a]);
+      rightAnswerCount++;
+      isCorrect = true;
+      alert('Correct, I visited this state! I visited Alaska, Nevada, Hawaii and Florida');
+      break;
+    }
   }
+  if (isCorrect) {
+    break;
+  }
+  alert('Not yet, but I\'ll go once for sure');
+
 }
-//console.log('usersGuess:', usersGuess);
+
 alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
 
 alert('Thank you ' + userName + ' for taking small quiz about me, hope you had fun and you\'ll know me better!');

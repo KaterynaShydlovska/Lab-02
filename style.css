@@ -30,6 +30,7 @@ p{
     font-size: 24px;
 
 }
+
  
 
 .text{
@@ -46,6 +47,7 @@ p{
     margin-bottom: 40px;
     padding: 10px;
     font-size: 24px;
+    
 }
 .list-2{
    background-color: rgb(229, 226, 226);
@@ -58,5 +60,20 @@ footer{
     text-align: center;
 }
 
+#list-1 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 2px white solid;
+    width: 800px;
+}
 
+button{
+    width: 200px;
+    height: 40px;
+    border-radius: 75%;
+}
+button:hover {
+  background-color: orange; /* Green */
+  color: white;
 }
