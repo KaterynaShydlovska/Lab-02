@@ -60,7 +60,6 @@ if (likeToBeHere === 'yes' || likeToBeHere === 'y') {
 } else {
   alert('No, No, No. It\'s impssible!');
 }
-
 alert('Hey, now we\'ll play a new game. Rules are super easy, you should to try guess a number.');
 
 
@@ -69,7 +68,7 @@ for (var i = 0; i < 4; i++ ) {
   myAge = parseInt(myAge);
   if (myAge === 25) {
     alert('You are right!');
-    rightAnswerCount++;
+    break;
 
   } else if (myAge < 25) {
     alert('Too low');
@@ -77,73 +76,25 @@ for (var i = 0; i < 4; i++ ) {
     alert('Wow, to hight!');
   }
 }
-//console.log(typeof myAge);
 
 
-// var language = prompt('How many languages I speak?');
-// language = parseInt(language);
-// if (language === 3) {
-//   alert('You are right! I speak Ukranian, Russian and English');
-//   rightAnswerCount++;
-
-// } else if (language < 3) {
-//   alert('Too low, I speak 3.');
-// } else {
-//   alert('Wow, to hight, I would like to!');
-// }
-// //console.log('language:' , language);
-
-// var statesVisited = prompt('I loveeee traveling! What do you think, how many states I visited in US?');
-// statesVisited = parseInt(statesVisited);
-// if (statesVisited === 10) {
-//   alert('You are right!');
-//   rightAnswerCount++;
-// }
-
-// else if (statesVisited < 10) {
-//   alert('Too low');
-// } else {
-//   alert('Wow, to hight!');
-// }
-// //console.log('statesVisited:' , statesVisited);
 
 
-// var family = prompt('How many brothers and sisters I have?');
-// family = parseInt(family);
-// if (family === 1) {
-//   alert('You are right!');
-//   rightAnswerCount++;
-// } else if (family < 1) {
-//   alert('Too low');
-// } else {
-//   alert('Wow, to hight!');
-// }
-// //console.log('family:' , family);
+var statesVisited = ['alaska', 'nevada', 'hawaii', 'florida', 'illinois', 'idaho'];
+// console.log('statesVisited:', statesVisited);
 
-// var jobs = prompt('How many jobs I had before came to school?');
-// jobs = parseInt(jobs);
-// if (jobs === 13) {
-//   alert('You are right!');
-//   rightAnswerCount++;
-// } else if (jobs < 13) {
-//   alert('Too low, I changed 13 jobs bafore came here.');
-// } else {
-//   alert('Wow, to hight! Impossible, I\'m to young');
-// }
-// //console.log('jobs:' , jobs);
-
-// var tattoo = prompt('How many tatto I have ?');
-// tattoo = parseInt(tattoo);
-// if (tattoo === 2) {
-//   alert('You are right!');
-//   rightAnswerCount++;
-// } else if (jobs < 2) {
-//   alert('Too low, I changed 13 jobs bafore came here.');
-// } else {
-//   alert('Wow, to hight! Impossible, I\'m to young');
-// }
-//console.log('tattoo:', tattoo);
-
+for (var j = 0; j < 6; j++){
+  var usersGuess = prompt('I loveeee traveling! What do you think, which states I already visited in US, Alaska, Nevada, Hawaii, Florida, Illinois, Texas?');
+  var usersGuess = usersGuess.toLowerCase();
+  if (statesVisited.includes(usersGuess)) {
+    rightAnswerCount++;
+    alert('Correct, I visited this state!');
+    break;
+  } else {
+    alert('Not yet, but I\'ll go once for sure');
+  }
+}
+//console.log('usersGuess:', usersGuess);
 alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
 
 alert('Thank you ' + userName + ' for taking small quiz about me, hope you had fun and you\'ll know me better!');
