@@ -3,10 +3,10 @@
 var rightAnswerCount = 0;
 var userNamePrompt;
 
-function askName(userAnswer) { 
-  prompt('Hey! What\'s your name ?')
-  userNamePrompt = userAnswer;
-  alert('Welcome ' + userAnswer + '!');
+function askName() {
+  var answer = prompt('Hey! What\'s your name ?')
+  userNamePrompt = answer;
+  alert('Welcome ' + answer + '!');
 }
 
 
@@ -112,7 +112,7 @@ function usersGuess(usersGuess){
       break;
     }
     alert('Not yet, but I\'ll go once for sure');
-    usersGuess = prompt("Try again");
+    usersGuess = prompt('Try again');
   }
 }
 
