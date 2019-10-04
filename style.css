@@ -50,10 +50,6 @@ p{
 
 }
 
-    
-
-
-
 button{
     width: 200px;
     height: 60px;
@@ -63,8 +59,6 @@ button:hover {
   background-color: pink; /* Green */
   color: white;
 }
-
- 
 
 .text{
     background-color: rgb(229, 226, 226);
@@ -76,6 +70,9 @@ button:hover {
     text-align: center;
     font-size: 24px;
     border-radius: 15%;
+}
+p{
+    font-size: 24px;
 }
 
 
@@ -116,7 +113,7 @@ button:hover {
     margin-right: 10px;
     margin-bottom: 40px;
     padding: 70px;
-    font-size: 24px;
+    font-size: 20px;
      border-radius: 15%;
 }
 h2{
