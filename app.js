@@ -1,10 +1,13 @@
 'use strict';
 
 var rightAnswerCount = 0;
-var userName =prompt('Hey! What\'s your name ?');
-// console.log('userName: ', userName);
+var userNamePrompt;
 
-alert('Welcome ' + userName + '!');
+function askName(userAnswer) { 
+  prompt('Hey! What\'s your name ?')
+  userNamePrompt = userAnswer;
+  alert('Welcome ' + userAnswer + '!');
+}
 
 
 
@@ -81,9 +84,9 @@ function myAge(myAge){
       break;
 
     } else if (myAge < 25) {
-      alert('Too low');
+      myAge = prompt('Too low. Try again');
     } else {
-      alert('Wow, to high!');
+      myAge = prompt('Too high. Try again');
     }
   }
 }
@@ -109,10 +112,11 @@ function usersGuess(usersGuess){
       break;
     }
     alert('Not yet, but I\'ll go once for sure');
-
+    usersGuess = prompt("Try again");
   }
 }
 
+askName();
 myName(prompt('Let\'s check you! My name is Kate?'));
 myColor(prompt('My favorite color is orange?'));
 nativeLanguage(prompt('My native language is Russian?'));
@@ -123,4 +127,4 @@ usersGuess(prompt('I loveeee traveling! What do you think, which states I alread
 
 alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
 
-alert('Thank you ' + userName + ' for taking small quiz about me, hope you had fun and you\'ll know me better!');
+alert('Thank you ' + userNamePrompt + ' for taking small quiz about me, hope you had fun and you\'ll know me better!');
