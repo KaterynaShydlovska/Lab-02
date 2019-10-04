@@ -72,7 +72,6 @@ function likeToBeHere(likeToBeHere){
 }
 
 
-alert('Hey, now we\'ll play a new game. Rules are super easy, you should to try guess a number.');
 
 function myAge(myAge){
   for (var i = 0; i < 4; i++ ){
@@ -113,12 +112,13 @@ function usersGuess(usersGuess){
 
   }
 }
+
 myName(prompt('Let\'s check you! My name is Kate?'));
 myColor(prompt('My favorite color is orange?'));
 nativeLanguage(prompt('My native language is Russian?'));
 pets(prompt('Do I have any pets?'));
 likeToBeHere(prompt('Am I happy to be here?'));
-myAge(prompt('How old am I?'));
+myAge(prompt('Okay, now let\'s play new game, you should to guess a number.How old am I?'));
 usersGuess(prompt('I loveeee traveling! What do you think, which states I already visited in US, Alaska, Nevada, Hawaii, Florida, Illinois, Texas?'));
 
 alert('Hey, you got ' + rightAnswerCount + ' correct answers, congradulations!!!');
