@@ -4,7 +4,7 @@ var rightAnswerCount = 0;
 var userNamePrompt;
 
 function askName() {
-  var answer = prompt('Hey! What\'s your name ?')
+  var answer = prompt('Hey! What\'s your name ?');
   userNamePrompt = answer;
   alert('Welcome ' + answer + '!');
 }
